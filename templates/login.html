@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MU Bank - Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+			<div class="alert alert-warning"><center>
+				{{message}}
+			</center>
+			</div>
+			{% endfor %}        
+		{% endif %}
+	{% endwith %}
+	
+    <center><img src="/MSU logo.jpg" style="width: 200px;height: 100px;margin-top: 50px;margin-bottom: 50px;" alt=""></center>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="" method="post">
+			<h1 style="margin: 10px;">Admin Login</h1>
+			<!-- <div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span> -->
+			<!-- <input type="text" placeholder="Name" style="margin: 10px;"/> -->
+			<input type="number" required name="emp" placeholder="Employee ID" style="margin: 10px;"/>
+			<input type="password" required name="pwd" placeholder="Password" style="margin: 10px;"/>
+			<button class="btn" style="margin: 10px; cursor:pointer">Sign In</button>
+			
+
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="" method="post">
+			<h1 style="margin: 10px;">User Login</h1>
+			<!-- <div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span> -->
+			<input type="number" required name="Acc" placeholder="Acc No" style="margin: 10px;" />
+			<input type="number" required name="PIN" placeholder="PIN" style="margin: 10px;" />
+			<!-- <a href="#">Forgot your password?</a> -->
+			<button class="btn" style="margin: 10px; cursor:pointer">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Are you a User?</h1>
+				<p>If yes, click on the user login button below to redirect to user login</p>
+				<button class="ghost" id="signIn">User login</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h2>Are you Looking for Admin portal?</h2>
+				<p>Click the button given below to redirect to Admin login</p>
+				<button class="ghost" id="signUp">Admin Login</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+</body>
+<script src="/login.js"></script>
+</html>

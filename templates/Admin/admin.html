@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Bank- Admin portal</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="nav-bar">
+            <div id="logo" class="nav-item"><span>Admin Portal</span></div>
+            <a href="/">
+                <div class="nav-item"><span> Log-out</span></div>
+            </a>
+            <a href="/admin/Create-Account">
+                <div class="nav-item "><span>Create Account</span></div>
+            </a>
+            <a href="/admin/Deposit">
+                <div class="nav-item"><span> Deposit</span></div>
+            </a>
+            <a href="/admin/Withdraw">
+                <div class="nav-item"><span> Withdraw</span></div>
+            </a>
+            <a href="/admin">
+                <div class="nav-item active"><span> Home</span></div>
+            </a>
+        </div>
+    </nav>
+
+    <center><img src="/MSU logo.jpg" style="width: 150px;height: 70px;margin-top: 50px;" alt=""></center>
+    <center>
+        <h1 style="margin-top: 50px;">Hello <strong>{{admin[3]}}</strong>!</h1>
+    </center>
+    <div class="cont">
+        <div class="elem-container">
+            <div class="elements" id="show-details">
+               <center> <i class="fa fa-handshake-o" style="font-size:36px;color:#B284BE;"></i> </center>
+                <br>
+                <center> <h4 style="font-size: 20px; font-weight: 500; text-decoration: underline;">Create User Account</h4> </center>
+
+                <h5 style="font-size: 15px; margin-top: 30px;">Want to create a new customer account? Click here</h5>
+            </div>
+            <div class="elements" id="transfer">
+                <center> <i class="fa fa-level-up" style="font-size:36px;color:#B284BE;"></i> </center>
+                <br>
+                <center> <h4 style="font-size: 20px; font-weight: 500; text-decoration: underline;">Deposit</h4> </center>
+
+                <h5 style="font-size: 15px; margin-top: 30px;">Click this icon to redirect to a page where funds can be deposited to a user account
+                </h5>
+            </div>
+            <div class="elements">
+                <center><i class="fa fa-level-down" style="font-size:36px;color:#B284BE;"></i></center>
+                <br>
+                <center><h4 style="font-size: 20px; font-weight: 500; text-decoration: underline;">Withdraw</h4></center>
+
+                <h5 style="font-size: 15px; margin-top: 30px;">Do you have a withdrawal request? click here to analyse the request</h5>
+            </div>
+        </div>
+        <!-- <div class="elem-container">
+            <div class="elements hidden" id="show-details">
+                <i class="fa fa-address-card-o" style="font-size:36px;color:#B284BE;"></i>
+                <br>
+                <h4>Show Account Details</h4>
+
+                <h5>Your Account details are readily displayed at one place</h5>
+            </div>
+            <div class="elements" id="show-details">
+                <i class="fa fa-address-card-o" style="font-size:36px;color:#B284BE;"></i>
+                <br>
+                <h4>Show Account Details</h4>
+
+                <h5>Your Account details are readily displayed at one place</h5>
+            </div>
+            <div class="elements hidden" id="show-details">
+                <i class="fa fa-address-card-o" style="font-size:36px;color:#B284BE;"></i>
+                <br>
+                <h4>Show Account Details</h4>
+
+                <h5>Your Account details are readily displayed at one place</h5>
+            </div>
+
+        </div> -->
+    </div>
+
+    <footer class="foot">
+
+    </footer>
+</body>
+<script src="/users.js"></script>
+
+</html>

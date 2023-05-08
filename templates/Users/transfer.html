@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Bank- Transfer</title>
+    <link rel="stylesheet" href="/users/transfer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="nav-bar">
+            <div id="logo" class="nav-item"><span>Users Portal</span></div>
+                <a href="/"><div class="nav-item"><span> Log-out</span></div></a>
+                <!-- <a href="/users/change-details"><div class="nav-item "><span> Change Details</span></div></a> -->
+                <a href="/users/transfer"><div class="nav-item active"><span> Transfer</span></div></a>
+                <a href="/users/Credit"><div class="nav-item"><span> Credit</span></div></a>
+                <a href="/users/Debit"><div class="nav-item"><span> Debit</span></div></a>
+                <a href="/users/show-details"><div class="nav-item"><span> Show details</span></div></a>
+                <a href="/users"><div class="nav-item"><span> Home</span></div></a>
+        </div>
+    </nav>
+    
+    <div class="alert alert-warning notify"><center>{{fail}}</center></div>
+    <div class="alert alert-success notify"><center>{{success}}</center></div>
+
+    <center>
+      <img
+        src="/MSU logo.jpg"
+        style="width: 150px; height: 70px; margin: 20px"
+        alt=""
+      />
+
+      <h1 class="acc">Transfer Funds</h1>
+    </center>
+
+    <div class="contain shw">
+      <center>
+        <div class="conf"></div>
+      </center>
+
+      
+      <div class="inp-ch">
+
+      <label for="Acc" class="lab">
+        Enter Account no. of receiving account:</label>
+      <input type="text" name="Acc" id="Acc" class="inp" />
+    </div>
+    <div class="inp-ch">
+      <label for="Amt" class="lab"
+        >Enter the Amount you want to transfer: </label>
+      <input type="number" name="amt" id="amt" class="inp" />
+        </div>
+      <button id="myBtn" class="btn">Transfer</button>
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="" method="post">
+            <label for="Acc" class="hidden">
+              Enter Account no. of receiving account:</label
+            >
+            <input type="text" class="hidden" name="Acc" />
+            <label for="Amt" class="hidden"
+              >Enter the Amount you want to transfer:
+            </label>
+            <input type="number" name="amt" class="hidden" />
+            <label for="pin" class="lab"> Enter PIN </label><br /><br />
+            <input type="number" name="pin" class="inp"/>
+            <br /><br />
+
+            <button class="sub btn">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot"></footer>
+</body>
+<script src="/users/transfer.js"></script>
+
+</html>

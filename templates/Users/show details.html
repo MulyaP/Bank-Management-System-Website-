@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Bank- Details</title>
+    <link rel="stylesheet" href="/users/show-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="nav-bar">
+            <div id="logo" class="nav-item"><span>Users Portal</span></div>
+                <a href="/"><div class="nav-item"><span> Log-out</span></div></a>
+                <!-- <a href="/users/change-details"><div class="nav-item "><span> Change Details</span></div></a> -->
+                <a href="/users/transfer"><div class="nav-item"><span> Transfer</span></div></a>
+                <a href="/users/Credit"><div class="nav-item"><span> Credit</span></div></a>
+                <a href="/users/Debit"><div class="nav-item"><span> Debit</span></div></a>
+                <a href="/users/show-details"><div class="nav-item active"><span> Show details</span></div></a>
+                <a href="/users"><div class="nav-item"><span> Home</span></div></a>
+        </div>
+    </nav>
+
+    <center>
+        <img src="/MSU logo.jpg" style="width: 150px; height: 70px; margin: 20px" alt="" />
+    </center>
+
+    <div class="shw">
+        <div class="details">
+            <h3 class="acc">Account Details</h3>
+
+            <form action="/users/show-details" class="details-form" method="post">
+                <div class="inp-ch">
+                    <label for="Uname" class="lab"> Name: </label>
+                    <input type="text" name="Uname" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[2]}}" />
+                    <div class="btn">Change</div>
+                </div>
+
+                <div class="inp-ch">
+                    <label for="acc" class="lab"> Account No. : </label>
+                    <input type="text" name="acc" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[0]}}" />
+                    <!-- <div class="btn">Change</div><br> -->
+                </div>
+                <div class="inp-ch">
+                    <label for="balance" class="lab"> Balance. : </label>
+                    <input type="text" name="balance" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[4]}}" />
+                    <!-- <div class="btn">Change</div><br> -->
+                </div>
+                <div class="inp-ch">
+                    <label for="type" class="lab"> Type. : </label>
+                    <input type="text" name="type" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[3]}}" />
+                    <!-- <div class="btn">Change</div><br> -->
+                </div>
+                <!-- <br> -->
+                <div class="inp-ch">
+                    <label for="branch" class="lab"> Branch : </label>
+                    <input type="text" name="branch" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[5]}}" />
+                    <!-- <div class="btn">Change</div><br> -->
+                </div>
+                <div class="inp-ch">
+                    <label for="dob" class="lab"> DOB : </label>
+                    <input type="date" name="dob" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[6]}}" />
+                    <div class="btn">Change</div>
+                </div>
+                <div class="inp-ch">
+                    <label for="pin" class="lab"> PIN: </label>
+                    <input type="number" name="pin" placeholder="Enter Account number" class="inp" disabled
+                        value="{{user[1]}}" />
+                    <div class="btn">Change</div>
+                </div>
+                <div class="inp-ch">
+                    <label for="ph" class="lab"> Phone Number : </label>
+                    <input type="tel" name="ph" placeholder="Enter Account number" class="inp" value="{{user[7]}}"
+                        disabled />
+                    <div class="btn">Change</div>
+                </div>
+
+                <div class="inp-ch">
+                    <label for="email" class="lab"> Email : </label>
+                    <input type="email" name="email" placeholder="Enter Account number" class="inp" value="{{user[8]}}"
+                        disabled />
+                    <div class="btn">Change</div>
+                </div>
+                <center>
+                    <button id="sub" style="height: 50px; width: max-content" class="btn">
+                        Save Changes
+                    </button>
+                </center>
+            </form>
+        </div>
+    </div>
+
+    <footer class="foot"></footer>
+</body>
+<script src="/users/show-details.js"></script>
+
+</html>

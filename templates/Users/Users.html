@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Bank- Users portal</title>
+    <link rel="stylesheet" href="/users/users.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="nav-bar">
+                <div id="logo" class="nav-item"><span>Users Portal</span></div>
+                <a href="/"><div class="nav-item"><span> Log-out</span></div></a>
+                <!-- <a href="/users/change-details"><div class="nav-item "><span> Change Details</span></div></a> -->
+                <a href="/users/transfer"><div class="nav-item"><span> Transfer</span></div></a>
+                <a href="/users/Credit"><div class="nav-item"><span> Credit</span></div></a>
+                <a href="/users/Debit"><div class="nav-item"><span> Debit</span></div></a>
+                <a href="/users/show-details"><div class="nav-item"><span> Show details</span></div></a>
+                <a href="/users"><div class="nav-item active"><span> Home</span></div></a>
+        </div>
+    </nav>
+
+    <center><img src="/MSU logo.jpg" style="width: 150px;height: 70px;margin-top: 50px;" alt=""></center>
+    <center><h1 style="margin-top: 50px;">Hello <strong>{{user[2]}}</strong>!</h1></center>
+
+    <div class="elem-container">
+    <div class="elements" id="show-details">
+        <center> <i class="fa fa-address-card-o" style="font-size:36px;color:#B284BE;"></i> </center>
+        <br>
+        <center> <h4 style="font-size: 20px; font-weight: 500; text-decoration: underline;">Show Account Details</h4> </center>
+        
+        <h5 style="font-size: 15px; margin-top: 30px;">Your Account details are readily displayed at one place</h5>
+    </div>
+    <div class="elements" id="transfer">
+        <center><i class="fa fa-credit-card-alt" style="font-size:36px;color:#B284BE;"></i></center>
+        <br>
+        <center> <h4 style="font-size: 20px; font-weight: 500; text-decoration: underline;">Transfer your funds</h4> </center>
+        
+        <h5 style="font-size: 15px; margin-top: 30px;">Click this icon to redirect to a page where you can easily transfer your funds to any exisiting account</h5>
+    </div>
+    <!-- <div class="elements">
+        <i class="fa fa-edit" style="font-size:36px;color:#B284BE;"></i></i>
+        <br>
+        <h4>Change Your Details</h4>
+        
+        <h5>Want to change your profile details? Click here</h5>
+    </div> -->
+</div>
+
+    <footer class="foot">
+        
+    </footer>
+</body>
+<script src="/users/users.js"></script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Bank- withdraw</title>
+    <link rel="stylesheet" href="/admin/withdraw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="nav-bar">
+            <div id="logo" class="nav-item"><span>Admin Portal</span></div>
+            <a href="/">
+                <div class="nav-item"><span> Log-out</span></div>
+            </a>
+            <a href="/admin/Create-Account">
+                <div class="nav-item "><span>Create Account</span></div>
+            </a>
+            <a href="/admin/Deposit">
+                <div class="nav-item"><span> Deposit</span></div>
+            </a>
+            <a href="/admin/Withdraw">
+                <div class="nav-item active"><span> Withdraw</span></div>
+            </a>
+            <a href="/admin">
+                <div class="nav-item"><span> Home</span></div>
+            </a>
+        </div>
+    </nav>
+
+    <div class="alert alert-warning notify"><center>
+        {{fail}}
+    </center>
+    </div>
+    <div class="alert alert-success notify"><center>
+        {{success}}
+    </center>
+    </div>
+    <center><img src="/MSU logo.jpg" style="width: 150px;height: 70px;margin-top: 50px;" alt=""></center>
+    
+    <center>
+        <h1 style="margin: 50px;">Withdraw Amount</strong>!</h1>
+    </center>
+
+    <form action="/admin/Withdraw" method="post" class="shw">
+        <div class="line">
+            <label for="acc" class="lab">Account no. : </label>
+            <input type="number" required name="acc" class="inp"><br><br>
+        </div>
+        
+        <div class="line">
+            <label for="amt" class="lab">Amount withdrawn :</label>
+            <input type="number" required name="amt" class="inp"><br><br>
+        </div>
+
+        <button class="btn">Withdraw</button>
+    </form>
+
+    <footer class="foot">
+
+    </footer>
+</body>
+<script src="/users.js"></script>
+
+</html>

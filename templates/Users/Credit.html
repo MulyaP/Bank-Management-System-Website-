@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Bank- Details</title>
+    <link rel="stylesheet" href="/users/credit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="nav-bar">
+            <div id="logo" class="nav-item"><span>Users Portal</span></div>
+                <a href="/"><div class="nav-item"><span> Log-out</span></div></a>
+                <!-- <a href="/users/change-details"><div class="nav-item "><span> Change Details</span></div></a> -->
+                <a href="/users/transfer"><div class="nav-item"><span> Transfer</span></div></a>
+                <a href="/users/Credit"><div class="nav-item active"><span> Credit</span></div></a>
+                <a href="/users/Debit"><div class="nav-item"><span> Debit</span></div></a>
+                <a href="/users/show-details"><div class="nav-item"><span> Show details</span></div></a>
+                <a href="/users"><div class="nav-item"><span> Home</span></div></a>
+        </div>
+    </nav>
+
+    <center><img src="/MSU logo.jpg" style="width: 150px;height: 70px;margin: 20px;" alt=""></center>
+
+    <div class="shw">
+        <div class="profile-pic">
+
+        </div>
+
+        <div class="details">
+            <div class="head">
+                <h3 class="acc">Credited record Details</h3>
+            </div>
+            <center>
+                <div class="table">
+                    <div class="line">
+                        <p class="info">Transaction Id</p>
+                        <p class="info">To account</p>
+                        <p class="info">Amount</p>
+                    </div>
+
+                    {% for trans in Transaction %}
+                        <div class="line">
+                            <p class="info">{{trans[0]}}</p>
+                            <p class="info">{{trans[1]}}</p>
+                            <p class="info">{{trans[3]}}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </center>
+            
+
+        </div>
+    </div>
+
+    <footer class="foot">
+
+    </footer>
+</body>
+<!-- <script src="/users/show-details.js"></script> -->
+
+</html>
